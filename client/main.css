@@ -1,0 +1,8 @@
+/* CSS declarations go here */
+.gallery-item{list-style: none;}
+
+.gallery-item img{
+	width: 250px;
+
+
+}

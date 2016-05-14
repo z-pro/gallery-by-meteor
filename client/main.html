@@ -1,0 +1,30 @@
+<head>
+  <title>Gallery-by-meteor</title>
+
+</head>
+
+<body>
+  <h1>My Gallery !</h1>
+
+  {{> hello}}
+  {{> info}}
+</body>
+
+<template name="hello">
+  <button>take a picture</button>
+  <!-- <p>You've pressed the button {{counter}} times.</p> -->
+</template>
+
+<template name="info">
+  
+  <ul>
+    {{#each pictures}}
+
+
+<li class="gallery-item">
+<a id="{{_id}}" class="item-img" href="#"><img  class="img-responsive"   src="{{pic}}"></a>
+</li>
+
+    {{/each}}
+  </ul>
+</template>
